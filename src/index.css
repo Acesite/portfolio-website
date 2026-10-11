@@ -2,3 +2,8 @@
 @theme {
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }
+:root {
+  color-scheme: light;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

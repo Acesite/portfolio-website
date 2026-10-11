@@ -29,7 +29,7 @@ const skills = [
 function Section({ id, title, children }) {
   return (
     <section id={id} className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="mb-8 border-b border-black pb-3 text-lg font-medium dark:border-white">{title}</h2>
+      <h2 className="mb-8 border-b border-black pb-3 text-lg font-medium">{title}</h2>
       {children}
     </section>
   )
@@ -37,8 +37,8 @@ function Section({ id, title, children }) {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white">
-      <header className="sticky top-0 z-10 bg-white/90 backdrop-blur dark:bg-black/90">
+    <div className="min-h-screen bg-white text-black">
+      <header className="sticky top-0 z-10 bg-white/90 backdrop-blur">
         <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
           <a href="#top" className="font-medium">Nicole Menez</a>
           <div className="flex gap-6 text-sm">
@@ -86,7 +86,7 @@ function App() {
         </div>
 
         <Section id="experience" title="Experience">
-          <ul className="divide-y divide-black/15 dark:divide-white/20">
+          <ul className="divide-y divide-black/15">
             {experience.map((e) => (
               <li key={e.role} className="py-6 first:pt-0">
                 <p className="text-lg font-medium">{e.role}</p>
@@ -129,7 +129,7 @@ function App() {
           </p>
           <a
             href="mailto:meneznicole117477@gmail.com"
-            className="mt-6 inline-block border border-black bg-black px-5 py-2.5 font-medium text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black dark:border-white dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white dark:focus-visible:outline-white"
+            className="mt-6 inline-block border border-black bg-black px-5 py-2.5 font-medium text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
           >
             Email me
           </a>
